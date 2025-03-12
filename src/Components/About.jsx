@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Clipboard, Check } from "lucide-react";
 import { forwardRef } from "react";
 
-
 const About = (props, ref) => {
   const [copiedEmail, SetCopiedEmail] = useState(false);
   const [copiedPhone, setCopiedPhone] = useState(false);
@@ -20,10 +19,14 @@ const About = (props, ref) => {
     <section ref={ref} className="bg-white dark:bg-amber-400 py-12">
       <div className="max-w-7xl px-6 pb-10 mx-auto">
         <p className="text-xl font-medium text-stone-950">About</p>
-        <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+        <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
           Myself
         </h1>
-
+        <div class="flex mx-auto mt-2">
+          <span class="inline-block w-20 h-1 bg-stone-950 rounded-full"></span>
+          <span class="inline-block w-3 h-1 mx-1 bg-stone-900 rounded-full"></span>
+          <span class="inline-block w-1 h-1 bg-stone-800 rounded-full"></span>
+        </div>
         <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
           <div className="absolute w-full bg-slate-50 -z-10 md:h-96 rounded-3xl"></div>
 
@@ -33,7 +36,6 @@ const About = (props, ref) => {
               src="/src/assets/Images/homepage_image.jpg"
               alt="Profile Picture"
             />
-
             <div className=" mx-auto">
               <h2 className="text-2xl font-semibold ml-1 sm:text-md text-center text-gray-950 py-2 mt-1">
                 Personal Information
@@ -47,14 +49,12 @@ const About = (props, ref) => {
                   <p className="text-sm sm:text-xs text-gray-400">
                     Nandakumar Parthasarathi
                   </p>
-
                   <p className="text-sm font-semibold mt-4 text-amber-400">
                     Date of Birth
                   </p>
                   <p className="text-sm text-gray-400 sm:text-xs">
                     30th March, 2005
                   </p>
-
                   <p className="text-sm font-semibold mt-4 text-amber-400">
                     Email Address
                   </p>
@@ -80,7 +80,6 @@ const About = (props, ref) => {
                       </div>
                     </div>
                   </div>
-
                   <p className="text-sm font-semibold mt-4 text-amber-400">
                     Location
                   </p>
@@ -88,7 +87,6 @@ const About = (props, ref) => {
                     Chennai, India
                   </p>
                 </div>
-
                 {/* <!-- Right Column --> */}
                 <div className="flex flex-col justify-center p-6 shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
                   <p className="text-sm font-semibold text-amber-400">
@@ -116,7 +114,6 @@ const About = (props, ref) => {
                     )}
                     <div className="flex items-center gap-1 transition-transform hover:scale-105 cursor-pointer">
                       <p className="text-sm sm:text-xs text-gray-400">
-                        {" "}
                         {phoneNumber}
                       </p>
                       <div
@@ -133,7 +130,6 @@ const About = (props, ref) => {
                       </div>
                     </div>
                   </div>
-
                   <p className="text-sm font-semibold mt-4 text-amber-400">
                     Languages
                   </p>

@@ -26,9 +26,15 @@ const Skills = (props, ref) => {
     <section ref={ref} className="bg-white dark:bg-stone-950 py-12">
       <div  className="max-w-7xl px-6 pb-20 mx-auto">
       <p className="text-xl font-medium text-amber-400">My</p>
-        <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
+        <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
           Skills
         </h1>
+        
+        <div class="flex mx-auto mt-2">
+                    <span class="inline-block w-20 h-1 bg-amber-400 rounded-full"></span>
+                    <span class="inline-block w-3 h-1 mx-1 bg-amber-300 rounded-full"></span>
+                    <span class="inline-block w-1 h-1 bg-amber-200 rounded-full"></span>
+                </div>
 
         <h1 className="mt-20 pb-6 md:text-xl  font-semibold text-gray-400 capitalize lg:text-xl dark:text-gray-400">
           Tech stack
