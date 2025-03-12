@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -43,38 +43,20 @@ const Navbar = () => {
           id="navbar-cta"
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 md:p-0 text-white bg-amber-400 rounded-sm md:bg-transparent md:text-amber-600 md:dark:text-amber-400 cursor-pointer"
-                aria-current="page"
-              >
+            <li className="block py-2 px-3 md:p-0 text-white bg-amber-400 rounded-sm md:bg-transparent md:text-amber-600 md:dark:text-amber-400 cursor-pointer"  onClick={() => handleScroll(homeRef)}>
+              
                 Home
-              </a>
             </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"
-              >
+            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(aboutRef)}>
+              
                 About
-              </a>
             </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"
-              >
+            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(skillsRef)}>
+              
                 Skills
-              </a>
             </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"
-              >
+            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(resumeRef)}>
                 Resume
-              </a>
             </li>
           </ul>
         </div>

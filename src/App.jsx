@@ -1,20 +1,56 @@
-import React from 'react'
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-import About from './Components/About'
-import Skills from './Components/Skills'
-import Resume from './Components/Resume'
+import React, { useRef } from "react";
+import Navbar from "./Components/Navbar";
+import Home from "./Components/Home";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Resume from "./Components/Resume";
+import Footer from "./Components/Footer";
 
 const App = () => {
+  // Create references for sections
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const resumeRef = useRef(null);
+
+  // Function to scroll to the selected section
+  const handleScroll = (ref) => {
+    if (ref.current) {
+      window.scrollTo({
+        top: ref.current.offsetTop - 80, // Adjust for navbar height
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
-    <Navbar />
-    <Home />
-    <About />
-    <Skills />
-    <Resume />
-    </>
-  )
-}
+      {/* Pass handleScroll function and refs to Navbar */}
+      <Navbar
+        handleScroll={handleScroll}
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        skillsRef={skillsRef}
+        resumeRef={resumeRef}
+      />
 
-export default App
+      {/* Attach refs inside the divs of each section */}
+      <div ref={homeRef}>
+        <Home />
+      </div>
+      <div ref={aboutRef}>
+        <About />
+      </div>
+      <div ref={skillsRef}>
+        <Skills />
+      </div>
+      <div ref={resumeRef}>
+        <Resume />
+      </div>
+      
+      <Footer />
+    </>
+  );
+};
+
+export default App;

@@ -1,6 +1,8 @@
 import React from "react";
+import { forwardRef } from "react";
 
-const Skills = () => {
+
+const Skills = (props, ref) => {
   const tech_skills = [
     // Column 1: HTML, CSS, JS
     { title: "HTML5", percentage: 85 },
@@ -21,14 +23,14 @@ const Skills = () => {
   ];
 
   return (
-    <section className="bg-white dark:bg-stone-950 py-12">
-      <div className="max-w-6xl px-6 mx-auto">
-        <p className="text-xl font-medium text-amber-400">My</p>
+    <section ref={ref} className="bg-white dark:bg-stone-950 py-12">
+      <div  className="max-w-7xl px-6 pb-20 mx-auto">
+      <p className="text-xl font-medium text-amber-400">My</p>
         <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
           Skills
         </h1>
 
-        <h1 className="mt-20 md:text-xl  font-semibold text-gray-400 capitalize lg:text-xl dark:text-gray-400">
+        <h1 className="mt-20 pb-6 md:text-xl  font-semibold text-gray-400 capitalize lg:text-xl dark:text-gray-400">
           Tech stack
         </h1>
 
@@ -39,7 +41,7 @@ const Skills = () => {
             {tech_skills.slice(0, 3).map((tech_skill, index) => (
               <div key={index} className="w-full">
                 <div className="mb-1 flex items-center justify-between">
-                  <p className="text-gray-800 dark:text-white text-sm font-medium">
+                  <p className="text-gray-800 dark:text-slate-50 text-sm font-medium">
                     {tech_skill.title}
                   </p>
                   <span className="text-amber-400 text-sm">
@@ -61,7 +63,7 @@ const Skills = () => {
             {tech_skills.slice(3).map((tech_skill, index) => (
               <div key={index} className="w-full">
                 <div className="mb-1 flex items-center justify-between">
-                  <p className="text-gray-800 dark:text-white text-sm font-medium">
+                  <p className="text-gray-800 dark:text-slate-50 text-sm font-medium">
                     {tech_skill.title}
                   </p>
                   <span className="text-amber-400 text-sm">
@@ -77,7 +79,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
-          <h1 className="py-4 md:text-xl font-semibold text-gray-800 capitalize lg:text-xl dark:text-white">
+          <h1 className="py-4 md:text-xl font-semibold text-gray-800 capitalize lg:text-xl dark:text-gray-400">
             Additional
           </h1>
         </main>
@@ -86,7 +88,7 @@ const Skills = () => {
             {additional_skills.map((additional_skill, index) => (
               <div key={index} className="w-full">
                 <div className="mb-1 flex items-center justify-between">
-                  <p className="text-gray-800 dark:text-white text-sm font-medium">
+                  <p className="text-gray-800 dark:text-slate-50 text-sm font-medium">
                     {additional_skill.title}
                   </p>
                   <span className="text-amber-400 text-sm">
