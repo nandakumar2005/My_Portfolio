@@ -47,8 +47,8 @@ const App = () => {
       <div ref={resumeRef}>
         <Resume />
       </div>
-      
       <Footer />
+
     </>
   );
 };

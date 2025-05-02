@@ -22,10 +22,10 @@ const About = (props, ref) => {
         <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
           Myself
         </h1>
-        <div class="flex mx-auto mt-2">
-          <span class="inline-block w-20 h-1 bg-stone-950 rounded-full"></span>
-          <span class="inline-block w-3 h-1 mx-1 bg-stone-900 rounded-full"></span>
-          <span class="inline-block w-1 h-1 bg-stone-800 rounded-full"></span>
+        <div className="flex mx-auto mt-2">
+          <span className="inline-block w-20 h-1 bg-stone-950 rounded-full"></span>
+          <span className="inline-block w-3 h-1 mx-1 bg-stone-900 rounded-full"></span>
+          <span className="inline-block w-1 h-1 bg-stone-800 rounded-full"></span>
         </div>
         <main className="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
           <div className="absolute w-full bg-slate-50 -z-10 md:h-96 rounded-3xl"></div>
