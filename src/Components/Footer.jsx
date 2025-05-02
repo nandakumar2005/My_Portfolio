@@ -1,18 +1,18 @@
 import React from "react";
-
+import logo from "../assets/Images/logo.jpg";
 
 const Footer = () => {
   return (
     <>
       <section className="bg-white dark:bg-stone-950  text-stone-50">
         <div className="max-w-7xl px-6 mx-20">
-        <footer className="footer bg-stone-950 px-6 py-4 hidden sm:hidden md:block">
-        <div className="flex w-full flex-wrap items-center justify-between">
+          <footer className="footer bg-stone-950 px-6 py-4 hidden sm:hidden md:block">
+            <div className="flex w-full flex-wrap items-center justify-between">
               <div className="flex flex-row items-center gap-x-2 cursor-pointer">
                 <img
-                  src="/src/assets/Images/logo.jpg"
-                  className="h-10 w-10 rounded-full object-cover"
-                  alt="Flowbite Logo"
+                  className="h-10 w-10 rounded-full object-cover cursor-pointer"
+                  src={logo}
+                  alt="logo"
                 />
                 <p className="sm:text-md text-gray-400">Nandakumar</p>
               </div>

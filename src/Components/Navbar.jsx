@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
+import logo from '../assets/Images/logo.jpg'; 
+
 
 const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +10,8 @@ const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef }) => {
     <nav className="bg-white border-gray-200 dark:bg-stone-950 sticky top-0 z-50 shadow-md dark:border-slate-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <img
-          src="/src/assets/Images/logo.jpg"
           className="h-10 w-10 rounded-full object-cover cursor-pointer"
-          alt="Flowbite Logo"
+          src={logo} alt="logo" 
         />
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a href="/src/assets/my_resume.pdf" download="Nandakumar_Resume.pdf">

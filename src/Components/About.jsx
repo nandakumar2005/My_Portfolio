@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Clipboard, Check } from "lucide-react";
+import homepageImage from '../assets/Images/homepage_image.jpg';
+
 import { forwardRef } from "react";
 
 const About = (props, ref) => {
@@ -33,8 +35,7 @@ const About = (props, ref) => {
           <div className="w-full bg-amber-400 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
             <img
               className="h-24 w-24 sm:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-3xl"
-              src="/src/assets/Images/homepage_image.jpg"
-              alt="Profile Picture"
+              src={homepageImage} alt="homepage"
             />
             <div className=" mx-auto">
               <h2 className="text-2xl font-semibold ml-1 sm:text-md text-center text-gray-950 py-2 mt-1">
