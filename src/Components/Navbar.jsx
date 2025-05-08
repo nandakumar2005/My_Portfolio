@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
 import logo from '../assets/Images/logo.jpg'; 
+import myresume from '../assets/Images/myresume.pdf' 
 
 
 const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef }) => {
@@ -14,7 +15,7 @@ const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef }) => {
           src={logo} alt="logo" 
         />
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <a href="/src/assets/my_resume.pdf" download="Nandakumar_Resume.pdf">
+          <a href={myresume} download="Nandakumar_Resume.pdf">
             <button
               type="button"
               className="flex flex-row items-center text-stone-950 bg-amber-400 hover:bg-amber-500 transition-all ease-in-out duration-500 focus:ring-4 focus:outline-none focus:ring-amber-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-amber-400 dark:hover:bg-amber-500 dark:focus:ring-amber-300"
