@@ -47,7 +47,7 @@ const App = () => {
       <div ref={resumeRef}>
         <Resume />
       </div>
-      <Footer />
+      <Footer handleScroll={handleScroll} homeRef={homeRef} />
 
     </>
   );

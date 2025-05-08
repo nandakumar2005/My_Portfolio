@@ -1,21 +1,24 @@
 import React from "react";
 import logo from "../assets/Images/logo.jpg";
 
-const Footer = () => {
+const Footer = ({handleScroll , homeRef }) => {
   return (
     <>
       <section className="bg-white dark:bg-stone-950  text-stone-50">
         <div className="max-w-7xl px-6 mx-20">
           <footer className="footer bg-stone-950 px-6 py-4 hidden sm:hidden md:block">
             <div className="flex w-full flex-wrap items-center justify-between">
-              <div className="flex flex-row items-center gap-x-2 cursor-pointer">
-                <img
-                  className="h-10 w-10 rounded-full object-cover cursor-pointer"
-                  src={logo}
-                  alt="logo"
-                />
-                <p className="sm:text-md text-gray-400">Nandakumar</p>
-              </div>
+            <div
+              onClick={() => handleScroll(homeRef)}
+              className="flex flex-row items-center gap-x-2 cursor-pointer"
+            >
+              <img
+                className="h-10 w-10 rounded-full object-cover"
+                src={logo}
+                alt="logo"
+              />
+              <p className="sm:text-md text-gray-400">Nandakumar</p>
+            </div>
               <aside className="grid-flow-col items-center text-gray-400">
                 <p> Copyright © 2025</p>
               </aside>
