@@ -5,6 +5,9 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Resume from "./Components/Resume";
 import Footer from "./Components/Footer";
+import Gallery from "./Components/Gallery";
+import Projects from "./Components/Projects";
+import Certificates from "./Components/Certificates";
 
 const App = () => {
   // Create references for sections
@@ -12,6 +15,9 @@ const App = () => {
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const resumeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const certificatesRef = useRef(null);
+  const galleryRef = useRef(null);
 
   // Function to scroll to the selected section
   const handleScroll = (ref) => {
@@ -32,6 +38,9 @@ const App = () => {
         aboutRef={aboutRef}
         skillsRef={skillsRef}
         resumeRef={resumeRef}
+        projectsRef={projectsRef}
+        certificatesRef = {certificatesRef}
+        galleryRef={galleryRef}
       />
 
       {/* Attach refs inside the divs of each section */}
@@ -47,8 +56,16 @@ const App = () => {
       <div ref={resumeRef}>
         <Resume />
       </div>
+      <div ref={projectsRef}>
+      <Projects />
+      </div>
+      <div ref={certificatesRef}>
+      <Certificates />
+      </div>
+      <div ref={galleryRef}>
+      <Gallery />
+      </div>
       <Footer handleScroll={handleScroll} homeRef={homeRef} />
-
     </>
   );
 };

@@ -44,19 +44,19 @@ const About = (props, ref) => {
               <div className="grid md:grid-cols-2 mb-10 gap-1 border-2 bg-stone-950 p-6 rounded-xl shadow-lg transition-transform transform hover:scale-[1.02] hover:shadow-2xl duration-300 ease-in-out">
                 {/* <!-- Left Column --> */}
                 <div className="flex flex-col justify-center p-6 shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
-                  <p className="text-sm font-semibold text-amber-400">
+                  <p className="text-md font-semibold text-amber-400">
                     Full Name
                   </p>
                   <p className="text-sm sm:text-xs text-gray-400">
                     Nandakumar Parthasarathi
                   </p>
-                  <p className="text-sm font-semibold mt-4 text-amber-400">
+                  <p className="text-md font-semibold mt-4 text-amber-400">
                     Date of Birth
                   </p>
                   <p className="text-sm text-gray-400 sm:text-xs">
                     30th March, 2005
                   </p>
-                  <p className="text-sm font-semibold mt-4 text-amber-400">
+                  <p className="text-md font-semibold mt-4 text-amber-400">
                     Email Address
                   </p>
                   <div className="relative flex flex-col items-start">
@@ -81,7 +81,7 @@ const About = (props, ref) => {
                       </div>
                     </div>
                   </div>
-                  <p className="text-sm font-semibold mt-4 text-amber-400">
+                  <p className="text-md font-semibold mt-4 text-amber-400">
                     Location
                   </p>
                   <p className="text-sm sm:text-xs text-gray-400">
@@ -90,21 +90,21 @@ const About = (props, ref) => {
                 </div>
                 {/* <!-- Right Column --> */}
                 <div className="flex flex-col justify-center p-6 shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
-                  <p className="text-sm font-semibold text-amber-400">
+                  <p className="text-md font-semibold text-amber-400">
                     Department
                   </p>
                   <p className="text-sm sm:text-xs text-gray-400 mt-1">
                     Computer Science
                   </p>
 
-                  <p className="text-sm font-semibold mt-4 text-amber-400">
+                  <p className="text-md font-semibold mt-4 text-amber-400">
                     Job Title
                   </p>
                   <p className="text-sm sm:text-xs text-gray-400">
                     Frontend Developer
                   </p>
 
-                  <p className="text-sm font-semibold mt-4 text-amber-400">
+                  <p className="text-md font-semibold mt-4 text-amber-400">
                     Phone Number
                   </p>
                   <div className="relative flex flex-col items-start">
@@ -131,7 +131,7 @@ const About = (props, ref) => {
                       </div>
                     </div>
                   </div>
-                  <p className="text-sm font-semibold mt-4 text-amber-400">
+                  <p className="text-md font-semibold mt-4 text-amber-400">
                     Languages
                   </p>
                   <p className="text-sm sm:text-xs text-gray-400">

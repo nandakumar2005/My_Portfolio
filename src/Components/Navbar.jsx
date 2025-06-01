@@ -4,7 +4,7 @@ import logo from '../assets/Images/logo.jpg';
 import myresume from '../assets/Images/myresume.pdf' 
 
 
-const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef }) => {
+const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef , projectsRef , certificatesRef , galleryRef }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -59,6 +59,15 @@ const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef }) => {
             </li>
             <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(resumeRef)}>
                 Resume
+            </li>
+            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(projectsRef)}>
+                Projects
+            </li>
+            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(certificatesRef)}>
+                Certificates
+            </li>
+            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(galleryRef)}>
+                Gallery
             </li>
           </ul>
         </div>
