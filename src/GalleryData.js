@@ -1,3 +1,4 @@
+import blitz_1 from "../../my_portfolio/src/assets/Images/Gallery/Highlights/blitz_1.jpg"
 import blitz_2 from "../../my_portfolio/src/assets/Images/Gallery/Highlights/blitz_2.jpg"
 import blitz_3 from "../../my_portfolio/src/assets/Images/Gallery/Highlights/blitz_3.jpg"
 import blitz_4 from "../../my_portfolio/src/assets/Images/Gallery/Highlights/blitz_4.jpg"
@@ -47,6 +48,7 @@ import tnteam_12 from "../../my_portfolio/src/assets/Images/Gallery/TamilNadu/tn
 
 export const galleryImages = {
     highlights: [
+    { src: blitz_1, alt: "Highlight 1", category: "highlights" },
     { src: blitz_2, alt: "Highlight 2", category: "highlights" },
     { src: blitz_3, alt: "Highlight 3", category: "highlights" },
     { src: blitz_4, alt: "Highlight 4", category: "highlights" },
