@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { FaSearchPlus } from "react-icons/fa"; // Zoom icon
 import certificate_1 from "../assets/Images/certificate_1.jpg";
-import certificate_2 from "../assets/Images/certificate_2.jpg";
 
 const Certificates = (props, ref) => {
     const [isModalOpen, setIsModalOpen] = useState(false);

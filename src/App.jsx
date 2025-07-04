@@ -5,7 +5,7 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Resume from "./Components/Resume";
 import Footer from "./Components/Footer";
-import Gallery from "./Components/Gallery";
+// import Gallery from "./Components/Gallery";
 import Projects from "./Components/Projects";
 import Certificates from "./Components/Certificates";
 
@@ -62,9 +62,9 @@ const App = () => {
       <div ref={certificatesRef}>
       <Certificates />
       </div>
-      <div ref={galleryRef}>
+      {/* <div ref={galleryRef}>
       <Gallery />
-      </div>
+      </div> */}
       <Footer handleScroll={handleScroll} homeRef={homeRef} />
     </>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import { forwardRef } from "react";
 
 
 const Skills = (props, ref) => {
@@ -10,8 +9,8 @@ const Skills = (props, ref) => {
     { title: "JavaScript", percentage: 80 },
 
     // Column 2: React.js, Next.js, Tailwind CSS
-    { title: "React.js", percentage: 75 },
-    { title: "Next.js", percentage: 70 },
+    { title: "React.js", percentage: 80 },
+    { title: "Next.js", percentage: 75 },
     { title: "Tailwind CSS", percentage: 90 },
   ];
 
