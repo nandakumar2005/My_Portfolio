@@ -1,6 +1,6 @@
 import React from "react";
 import project_1 from "../assets/Images/project_1.png"
-import { forwardRef } from "react";
+import project_2 from "../assets/Images/project_2.png"
 
 const Projects = (props, ref) => {
   return (
@@ -16,7 +16,7 @@ const Projects = (props, ref) => {
           <span className="inline-block w-1 h-1 bg-amber-200 rounded-full"></span>
         </div>
         <section className="bg-amber-400 my-20 rounded-2xl">
-          <div className="container p-6 mx-auto">
+          <div className="container p-10 mx-auto">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
               {/* Card 1 */}
               <div className="relative group transition-transform duration-300 hover:scale-105">
@@ -37,7 +37,7 @@ const Projects = (props, ref) => {
                     href="https://nandakumarp.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-2 sm:mt-4 text-xs sm:text-sm text-blue-600 hover:underline"
+                    className="inline-block mt-2 sm:mt-4 text-xs sm:text-sm text-yellow-500 hover:underline"
                   >
                     nandakumarp.netlify.app
                   </a>
@@ -48,8 +48,8 @@ const Projects = (props, ref) => {
               <div className="relative group transition-transform duration-300 hover:scale-105">
                 <img
                   className="object-cover w-full h-96 rounded-xl shadow-lg brightness-90 group-hover:brightness-75 transition duration-300"
-                  src="https://images.unsplash.com/photo-1644018335954-ab54c83e007f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                  alt=""
+                  src={project_2}
+                  alt="Movie Detail Website"
                 />
                 <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white/80 dark:bg-stone-950/80 backdrop-blur-lg shadow-xl rounded-xl p-6 w-[90%] group-hover:-translate-y-2 transition-all duration-300 z-20">
                 <p className="font-semibold text-gray-800 dark:text-white text-sm sm:text-lg">
@@ -57,11 +57,16 @@ const Projects = (props, ref) => {
                   </p>
                   <p className="mt-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300">
                     This project is about a movie searching app. Users can see
-                    movie details and download songs from their favorite movies.
+                    movie details and watch movies.
                   </p>
-                  <span className="inline-block mt-2 sm:mt-4 text-xs sm:text-sm text-blue-500">
-                    In Process
-                  </span>
+                  <a
+                    href="https://mymovia.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-2 sm:mt-4 text-xs sm:text-sm text-yellow-500 hover:underline"
+                  >
+                    mymovia.netlify.app
+                  </a>
                 </div>
               </div>
             </div>

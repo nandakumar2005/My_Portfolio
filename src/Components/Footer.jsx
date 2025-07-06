@@ -17,7 +17,6 @@ const Footer = ({handleScroll , homeRef }) => {
                 src={logo}
                 alt="logo"
               />
-              <p className="sm:text-md text-gray-400">Nandakumar</p>
             </div>
               <aside className="grid-flow-col items-center text-gray-400">
                 <p> Copyright © 2025</p>
