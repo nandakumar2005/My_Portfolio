@@ -9,7 +9,7 @@ const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef , projec
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-stone-950 sticky top-0 z-50 shadow-md dark:border-slate-50">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
         <img
           className="h-10 w-10 rounded-full object-cover cursor-pointer"
           src={logo} alt="logo" 

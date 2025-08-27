@@ -11,7 +11,7 @@ const Home = (props, ref) => {
             Hello I'm Nandakumar
           </h1>
           <p className="mb-4 text-md font-normal text-slate-200 lg:text-xl md:text-lg sm:px-16 lg:px-36">
-            Frontend Developer & Infografic Designer
+            Full-Stack Web Developer & UI Enthusiasts
           </p>
           <div className="flex items-center justify-center mt-4 sm:mt-0 ">
             <a

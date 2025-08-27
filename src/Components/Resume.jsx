@@ -68,7 +68,7 @@ const Resume = (props, ref) => {
                   </p>
                 </div>
               </div>
-              <div className="hidden md:block w-1/2"></div> {/* Empty space for alignment */}
+              {/* <div className="hidden md:block w-1/2"></div> Empty space for alignment */}
             </li>
           </ol>
         </div>
