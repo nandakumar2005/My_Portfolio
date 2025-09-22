@@ -14,9 +14,9 @@ const Skills = (props, ref) => {
     { title: "Tailwind CSS", percentage: 90 },
 
     // Column 3: C, C++, MySQL
-    { title: "C", percentage: 60 },
+    { title: "C", percentage: 85 },
     { title: "C++", percentage: 70 },
-    { title: "MySQL", percentage: 70 },
+    { title: "MySQL", percentage: 75 },
 
   
   ];

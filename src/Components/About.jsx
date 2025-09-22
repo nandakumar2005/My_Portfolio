@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Clipboard, Check } from "lucide-react";
 import homepageImage from '../assets/Images/homepage_image.jpg';
 
-import { forwardRef } from "react";
 
 const About = (props, ref) => {
   const [copiedEmail, SetCopiedEmail] = useState(false);
