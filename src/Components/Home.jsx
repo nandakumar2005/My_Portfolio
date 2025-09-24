@@ -1,11 +1,10 @@
 import React from "react";
-import { forwardRef } from "react";
 
 
-const Home = (props, ref) => {
+const Home = () => {
   return (
     <>
-      <section ref={ref} className="flex items-center justify-center bg-center bg-no-repeat bg-[url('/src/assets/Images/hero_section_image.jpg')] bg-gray-700 bg-blend-multiply min-h-screen">
+      <section className="flex items-center justify-center bg-center bg-no-repeat bg-[url('/src/assets/Images/hero_section_image.jpg')] bg-gray-700 bg-blend-multiply min-h-screen">
         <div className=" px-4 mx-auto max-w-screen-xl text-center mt-52">
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-amber-500  xl:text-7xl lg:text-6xl md:text-4xl">
             Hello I'm Nandakumar

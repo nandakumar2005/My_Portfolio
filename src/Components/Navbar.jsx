@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import { Menu, X, Download } from "lucide-react";
-import logo from '../assets/Images/logo.jpg'; 
-import myresume from '../assets/Images/myresume.pdf' 
+import logo from "../assets/Images/logo.jpg";
+import myresume from "../assets/Images/myresume.pdf";
 
-
-const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef , projectsRef , certificatesRef }) => {
+const Navbar = ({
+  handleScroll,
+  homeRef,
+  aboutRef,
+  skillsRef,
+  resumeRef,
+  projectsRef,
+  certificatesRef,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -12,7 +19,8 @@ const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef , projec
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
         <img
           className="h-10 w-10 rounded-full object-cover cursor-pointer"
-          src={logo} alt="logo" 
+          src={logo}
+          alt="logo"
         />
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a href={myresume} download="Nandakumar_Resume.pdf">
@@ -26,7 +34,7 @@ const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef , projec
           </a>
 
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setIsOpen(true)}
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-cta"
@@ -45,26 +53,59 @@ const Navbar = ({ handleScroll, homeRef, aboutRef, skillsRef, resumeRef , projec
           id="navbar-cta"
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
-            <li className="block py-2 px-3 md:p-0 text-white bg-amber-400 rounded-sm md:bg-transparent md:text-amber-600 md:dark:text-amber-400 cursor-pointer"  onClick={() => handleScroll(homeRef)}>
-              
-                Home
+            <li
+              className="block py-2 px-3 md:p-0 text-white bg-amber-400 rounded-sm md:bg-transparent md:text-amber-600 md:dark:text-amber-400 cursor-pointer"
+              onClick={() => {
+                handleScroll(homeRef);
+                setIsOpen(false);
+              }}
+            >
+              Home
             </li>
-            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(aboutRef)}>
-              
-                About
+            <li
+              className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"
+              onClick={() => {
+                handleScroll(aboutRef);
+                setIsOpen(false);
+              }}
+            >
+              About
             </li>
-            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(skillsRef)}>
-              
-                Skills
+            <li
+              className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"
+              onClick={() => {
+                handleScroll(skillsRef);
+                setIsOpen(false);
+              }}
+            >
+              Skills
             </li>
-            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(resumeRef)}>
-                Resume
+            <li
+              className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"
+              onClick={() => {
+                handleScroll(resumeRef);
+                setIsOpen(false);
+              }}
+            >
+              Resume
             </li>
-            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(projectsRef)}>
-                Projects
+            <li
+              className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"
+              onClick={() => {
+                handleScroll(projectsRef);
+                setIsOpen(false);
+              }}
+            >
+              Projects
             </li>
-            <li className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer" onClick={() => handleScroll(certificatesRef)}>
-                Certificates
+            <li
+              className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"
+              onClick={() => {
+                handleScroll(certificatesRef);
+                setIsOpen(false);
+              }}
+            >
+              Certificates
             </li>
           </ul>
         </div>

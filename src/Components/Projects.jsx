@@ -2,9 +2,9 @@ import React from "react";
 import project_1 from "../assets/Images/project_1.png"
 import project_2 from "../assets/Images/project_2.png"
 
-const Projects = (props, ref) => {
+const Projects = () => {
   return (
-    <section ref={ref} className="bg-white dark:bg-stone-950 py-12">
+    <section className="bg-white dark:bg-stone-950 py-12">
       <div className="max-w-7xl px-6 mx-auto">
         <p className="text-xl font-medium text-amber-400">My</p>
         <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-slate-50">

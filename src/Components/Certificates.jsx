@@ -3,11 +3,11 @@ import { useState } from "react";
 import { FaSearchPlus } from "react-icons/fa"; // Zoom icon
 import certificate_1 from "../assets/Images/certificate_1.jpg";
 
-const Certificates = (props, ref) => {
+const Certificates = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
   
   return (
-    <section ref={ref} className="bg-white dark:bg-amber-400 py-12">
+    <section className="bg-white dark:bg-amber-400 py-12">
       <div className="max-w-7xl px-6 mx-auto">
         <p className="text-xl font-medium text-stone-950">My</p>
         <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-slate-50">
