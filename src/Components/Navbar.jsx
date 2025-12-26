@@ -8,7 +8,7 @@ const Navbar = ({
   homeRef,
   aboutRef,
   skillsRef,
-  resumeRef,
+  workexperienceRef,
   projectsRef,
   certificatesRef,
 }) => {
@@ -83,11 +83,11 @@ const Navbar = ({
             <li
               className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"
               onClick={() => {
-                handleScroll(resumeRef);
+                handleScroll(workexperienceRef);
                 setIsOpen(false);
               }}
             >
-              Resume
+              Work Experience
             </li>
             <li
               className="block py-2 px-3 md:p-0 text-slate-50  rounded-sm md:bg-transparent md:text-slate-500 md:dark:text-slate-50 hover:dark:text-amber-400 cursor-pointer"

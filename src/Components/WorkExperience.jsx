@@ -1,13 +1,13 @@
 import React from "react";
 
 
-const Resume = () => {
+const WorkExperience = () => {
   return (
     <section className="bg-white dark:bg-amber-400 py-12">
       <div className="max-w-7xl px-6 mx-auto">
       <p className="text-xl font-medium text-stone-950">My</p>
         <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-slate-50">
-          Resume
+        Work Experience
         </h1>
         <div className="flex mx-auto mt-2">
           <span className="inline-block w-20 h-1 bg-stone-950 rounded-full"></span>
@@ -77,4 +77,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default WorkExperience;

@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
-import Resume from "./Components/Resume";
+import WorkExperience from "./Components/WorkExperience";
 import Footer from "./Components/Footer";
 import Projects from "./Components/Projects";
 import Certificates from "./Components/Certificates";
@@ -13,9 +13,10 @@ const App = () => {
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
-  const resumeRef = useRef(null);
+  const workexperienceRef = useRef(null);
   const projectsRef = useRef(null);
   const certificatesRef = useRef(null);
+
 
 
   // Function to scroll to the selected section
@@ -36,9 +37,10 @@ const App = () => {
         homeRef={homeRef}
         aboutRef={aboutRef}
         skillsRef={skillsRef}
-        resumeRef={resumeRef}
+        workexperienceRef={workexperienceRef}
         projectsRef={projectsRef}
         certificatesRef = {certificatesRef}
+
       />
 
       {/* Attach refs inside the divs of each section */}
@@ -51,8 +53,8 @@ const App = () => {
       <div ref={skillsRef}>
         <Skills />
       </div>
-      <div ref={resumeRef}>
-        <Resume />
+      <div ref={workexperienceRef}>
+        <WorkExperience />
       </div>
       <div ref={projectsRef}>
       <Projects />
