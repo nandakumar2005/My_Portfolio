@@ -19,8 +19,8 @@ const Certificates = () => {
           <span className="inline-block w-1 h-1 bg-stone-800 rounded-full"></span>
         </div>
 
-        <section className="my-20">
-      <div className="container px-6 mx-auto">
+        <section className="sm:my-20 my-8">
+      <div className="container sm:px-6 px-0 mx-auto">
         <div className="relative lg:flex lg:items-center gap-10 bg-white/80 dark:bg-stone-950 backdrop-blur-md shadow-xl p-6 rounded-2xl hover:shadow-2xl transition duration-300">
           {/* Certificate Image */}
           <div className="relative group lg:w-1/2 w-full">
@@ -45,7 +45,7 @@ const Certificates = () => {
               Freshworks Graduate Certificate
             </h2>
 
-            <p className="mt-4 text-md text-slate-50 dark:text-gray-300">
+            <p className="mt-4 text-md text-gray-800 dark:text-slate-50">
               I successfully completed the Freshworks Web Development Program from 2022 to 2024, where I gained a strong foundation in HTML5, CSS3, and JavaScript. I also learned the basics of programming, Data Structures and Algorithms (DSA), and improved my problem-solving skills. This program helped me build real-time projects and understand how to approach coding in a structured and efficient way.
             </p>
             <p className="inline-block mt-4 text-amber-400 text-sm italic">

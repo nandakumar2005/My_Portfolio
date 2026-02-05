@@ -14,7 +14,7 @@ const WorkExperience = () => {
           <span className="inline-block w-3 h-1 mx-1 bg-stone-900 rounded-full"></span>
           <span className="inline-block w-1 h-1 bg-stone-800 rounded-full"></span>
         </div>
-        <div className="mt-20 relative">
+        <div className="sm:my-10 my-8 relative">
           {/* Center Timeline Line */}
           <div className="absolute left-1/2 top-0 w-1 h-full bg-slate-50 transform -translate-x-1/2 hidden md:block"></div>
 
@@ -22,8 +22,8 @@ const WorkExperience = () => {
             {/* First Card (Right Side) */}
             <li className="relative flex flex-col md:flex-row items-center md:justify-between">
               <div className="hidden md:block w-1/2"></div> {/* Empty space for alignment */}
-              <div className="relative w-full md:w-1/2 p-4">
-                <span className="absolute -left-4 md:-left-6 top-1/2 w-6 h-6 bg-amber-500 border-4 border-white dark:border-gray-900 rounded-full transform -translate-y-1/2"></span>
+              <div className="relative w-full md:w-1/2 sm:p-4 p-0">
+                {/* <span className="absolute -left-4 md:-left-6 top-1/2 w-6 h-6 bg-amber-500 border-4 border-white dark:border-gray-900 rounded-full transform -translate-y-1/2"></span> */}
                 <div className="bg-white dark:bg-stone-950 p-6 rounded-lg shadow-md">
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white flex items-center justify-between sm:text-2xl">
                     Frontend Developer
@@ -37,7 +37,7 @@ const WorkExperience = () => {
                   <span className="text-xs bg-slate-50 px-2.5 py-1 rounded-full">
                     Jarvislabs.ai
                   </span>
-                  <p className="mt-4 text-gray-600 dark:text-gray-300">
+                  <p className="mt-4 text-gray-800 dark:text-slate-50">
                     I have one year of experience as a Frontend Developer in a
                     startup, working with React.js, Next.js, and Tailwind CSS.
                     I developed responsive web apps and collaborated with teams
@@ -49,8 +49,8 @@ const WorkExperience = () => {
 
             {/* Second Card (Left Side) */}
             <li className="relative flex flex-col md:flex-row items-center md:justify-between">
-              <div className="relative w-full md:w-1/2 p-4">
-                <span className="absolute -right-4 md:-right-6 top-1/2 w-6 h-6 bg-amber-500 border-4 border-white dark:border-gray-900 rounded-full transform -translate-y-1/2"></span>
+              <div className="relative w-full md:w-1/2 sm:p-4 p-0">
+                {/* <span className="absolute -right-4 md:-right-6 top-1/2 w-6 h-6 bg-amber-500 border-4 border-white dark:border-gray-900 rounded-full transform -translate-y-1/2"></span> */}
                 <div className="bg-white dark:bg-stone-950 p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white flex items-center justify-between sm:text-2xl">
                 Infographic Design
@@ -61,7 +61,7 @@ const WorkExperience = () => {
                   <span className="text-xs bg-slate-50 px-2.5 py-1 rounded-full">
                     Jarvislabs.ai
                   </span>
-                  <p className="mt-4 text-gray-600 dark:text-gray-300">
+                  <p className="mt-4 text-gray-800 dark:text-slate-50">
                     Managed social media content for Jarvislabs.ai, focusing on
                     creating infographics and videos with Canva, ensuring brand
                     consistency and engaging visual content.

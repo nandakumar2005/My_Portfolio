@@ -4,7 +4,7 @@ import project_2 from "../assets/Images/project_2.png"
 
 const Projects = () => {
   return (
-    <section className="bg-white dark:bg-stone-950 py-12">
+    <section className="bg-white dark:bg-stone-950 py-12 ">
       <div className="max-w-7xl px-6 mx-auto">
         <p className="text-xl font-medium text-amber-400">My</p>
         <h1 className="mt-1 text-2xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-slate-50">
@@ -15,8 +15,8 @@ const Projects = () => {
           <span className="inline-block w-3 h-1 mx-1 bg-amber-300 rounded-full"></span>
           <span className="inline-block w-1 h-1 bg-amber-200 rounded-full"></span>
         </div>
-        <section className="bg-amber-400 my-20 rounded-2xl">
-          <div className="container p-10 mx-auto">
+        <section className="bg-amber-400 sm:my-20 my-8 rounded-2xl">
+          <div className="container sm:p-10 p-2 mx-auto">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
               {/* Card 1 */}
               <div className="relative group transition-transform duration-300 hover:scale-105">
